@@ -1,0 +1,11 @@
+{variables, [
+    {appid, "myapp"},
+    {description, ""}
+]}.
+{template, "complexapp/rebar.config", "rebar.config"}.
+{template, "complexapp/complexapp.app.src",
+    "apps/{{appid}}/src/{{appid}}.app.src"}.
+{template, "complexapp/complexapp_app.erl",
+    "apps/{{appid}}/src/{{appid}}.erl"}.
+{template, "complexapp/complexapp_sup.erl",
+    "apps/{{appid}}/src/{{appid}}_sup.erl"}.
